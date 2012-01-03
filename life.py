@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import time, sys
 
 SIZE = int(sys.argv[1])
@@ -56,11 +58,10 @@ def show(live):
     for i in range(SIZE):
         for j in range(SIZE):
             if [i, j] in live:
-                print 'O ',
+                print '0 ',
             else:
                 print '. ',
         print 
-        print
 
 
 
@@ -76,11 +77,11 @@ def main():
         day += 1
         print 'day', day
         show(live)
-        print '\n\n'
+        print '\n'
 
         update(live)
 
-        time.sleep(1)
+        time.sleep(.7)
 
     day += 1
     print 'day', day
