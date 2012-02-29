@@ -2,11 +2,12 @@
 
 import time, sys
 
-SIZE = int(sys.argv[1])
+SIZE = int(raw_input('Enter the size of universe: '))
 stable = False
 
 def read_coord(live):
-    num = int(raw_input('Enter the number:'))
+    num = int(raw_input('Enter the number of live cells:'))
+    print('Now, please enter the live cell co-ordniates')
     for i in range(num):
         input = raw_input('-').split()
         x = int(input[0])
