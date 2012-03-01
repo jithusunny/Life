@@ -59,9 +59,9 @@ def show(live):
     for i in range(SIZE):
         for j in range(SIZE):
             if [i, j] in live:
-                print '0 ',
+                print '* ',
             else:
-                print '. ',
+                print '  ',
         print 
 
 
